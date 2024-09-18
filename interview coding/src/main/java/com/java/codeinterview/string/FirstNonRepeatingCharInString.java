@@ -1,4 +1,4 @@
-package com.java.codeinterview.strings;
+package com.java.codeinterview.string;
 
 
 /*
