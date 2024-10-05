@@ -59,7 +59,7 @@ public class SinglyLinkedList {
 
     public void insertAtPosition(int data, int index){
         if(index < 0 || index > size){
-            throw new IllegalStateException(String.format("Data: % dan't be inserted at index: %d", data, index));
+            throw new IllegalStateException(String.format("Data: %d can't be inserted at index: %d", data, index));
         }
         if(index == 0){
             insertAtBeginning(data);
@@ -119,4 +119,18 @@ public class SinglyLinkedList {
     public int getSize(){
         return size;
     }
+
+    public Node reverseLinkedList(){
+        Node current = head;
+        Node previous = null;
+        Node next = null;
+        while(current != null){
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        return previous;
+    }
+    
 }

@@ -8,8 +8,9 @@ public class Test {
         linkedList.insertAtBeginning(20);
         linkedList.insertAtPosition(30, 1);
         linkedList.display();
-        //System.out.println(linkedList.deleteFromBeginning());
         System.out.println(linkedList.deleteFromEnd());
         linkedList.display();
+        System.out.println(linkedList.getSize());
+        System.out.println(linkedList.reverseLinkedList());
     }
 }
